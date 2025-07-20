@@ -1,16 +1,19 @@
 #!/bin/bash
 # Traps and cleanup
 
+DIR="/content/Basics"
+file="$DIR/17_op.log"
+
 cleanup() {
   echo "Cleaning up..."
-  rm -f temp_file.txt
+  rm -f $file
   echo "Done."
 }
 
 trap cleanup EXIT
 
 echo "Creating temp file..."
-touch temp_file.txt
+touch $file
 
 echo "Script running... Press Ctrl+C to trigger trap"
 sleep 10

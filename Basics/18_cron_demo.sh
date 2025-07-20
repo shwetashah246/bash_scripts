@@ -1,4 +1,7 @@
 #!/bin/bash
 # Simulated cron task
 
-echo "Cron simulation run at: $(date)" >> cron_output.log
+DIR="/content/Basics"
+file="$DIR/18_op.log"
+
+echo "Cron simulation run at: $(date)" >> $file

@@ -31,6 +31,78 @@
 ```
 ---------------------------------
 ```
+!bash /content/Basics/05_string.sh
+```
+---------------------------------
+```
+!bash /content/Basics/06_disk_usage_report.sh
+```
+---------------------------------
+```
+!bash /content/Basics/07_case.sh
+```
+---------------------------------
+```
+!bash /content/Basics/08_exit_status.sh
+```
+---------------------------------
+```
+!bash /content/Basics/09_posix_vs_bash.sh
+```
+---------------------------------
+```
+!bash /content/Basics/10_disk_monitor.sh
+```
+---------------------------------
+```
+!bash /content/Basics/11_colab_test.sh
+```
+---------------------------------
+```
+!bash /content/Basics/12_functions.sh
+```
+---------------------------------
+```
+!bash /content/Basics/13_arrays.sh
+```
+---------------------------------
+```
+!bash /content/Basics/14_arithmetic.sh
+```
+---------------------------------
+```
+!bash /content/Basics/15_parameters.sh one two three four
+```
+---------------------------------
+```
+!bash /content/Basics/16_heredoc.sh
+```
+---------------------------------
+```
+!bash /content/Basics/17_traps.sh
+```
+---------------------------------
+```
+!bash /content/Basics/18_cron_demo.sh
+```
+---------------------------------
+```
+!bash /content/Basics/19_save_to_file.sh
+```
+---------------------------------
+```
+!bash /content/Basics/20_save_with_flock.sh
+```
+---------------------------------
+```
+!bash /content/Basics/20_save_with_flock.sh
+```
+---------------------------------
+```
+!bash /content/Basics/21_redirection.sh
+```
+---------------------------------
+```
 !bash /content/Basics/22_variables.sh
 ```
 ---------------------------------
@@ -43,10 +115,6 @@
 ```
 ---------------------------------
 ```
-!bash /content/Basics/05_string.sh
-```
----------------------------------
-```
 !bash /content/Basics/25_readpipe.sh
 ```
 ---------------------------------
@@ -54,16 +122,30 @@
 !cat /etc/passwd |bash /content/Basics/25_readpipe.sh
 ```
 ---------------------------------
+```
+!bash /content/Basics/26_getopts.sh -a testarg dog cat horse
+```
 ---------------------------------
+```
+!bash /content/Basics/26_getopts.sh -b
+```
 ---------------------------------
+```
+!bash /content/Basics/26_getopts.sh -a hello
+```
 ---------------------------------
+```
+!bash /content/Basics/26_getopts.sh -a -c test # triggers ":)"
+```
 ---------------------------------
+```
+!bash /content/Basics/26_getopts.sh            # triggers \?
+```
 ---------------------------------
----------------------------------
----------------------------------
----------------------------------
----------------------------------
----------------------------------
+```
+!bash /content/Basics/99_best_practices.sh
+```
+
 
 ---
 

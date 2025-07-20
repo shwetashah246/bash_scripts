@@ -55,6 +55,9 @@ ls nonexistentfile 2> $errFile
 echo -e "\nRedirecting both STDOUT and STDERR to $comFile"
 (ls /etc/passwd && ls nofile) &> $comFile
 
+cat < $ipFile > $opFile
+# reads `<` from $ipFile and writes `>` the contents to $opFile.
+
 # Cleaning up
 rm $ipFile
 

@@ -1,7 +1,10 @@
 #!/bin/bash
 # Here document
 
-cat <<EOF > message.txt
+DIR="/content/Basics"
+file="$DIR/16_op.log"
+
+cat <<EOF > $file
 Hello!
 This is a multi-line message.
 Created using a here document.
@@ -9,4 +12,4 @@ Created using a here document.
 - Bash Script
 EOF
 
-echo "message.txt created"
+echo "$file created"
