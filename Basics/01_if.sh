@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Practices if, [[ ]], if-elif, -z, -n, =, !=, read -p, echo, [[]] v/s [] :"
+echo ""
+
 # | Option         | Description                                                      |
 # | -------------- | ---------------------------------------------------------------- |
 # | `-r`           | Prevents backslash escapes (recommended for raw input)           |
@@ -25,6 +28,16 @@
 # | `-z` | Zero length string     | String is **empty**     |
 # | `-n` | Non-zero length string | String is **not empty** |
 
+# | Feature                        | `[ ]`                 | `[[ ]]`             |    |     |
+# | ------------------------------ | --------------------- | ------------------- | -- | --- |
+# | POSIX compliant                | Yes                   | No                  |    |     |
+# | Word splitting/globbing        | Happens (need quotes) | Does not happen     |    |     |
+# | Supports regex                 | No                    | Yes (`=~` operator) |    |     |
+# | Logical operators (`&&`, \`    |                       | \`)                 | No | Yes |
+# | Recommended for modern scripts | Sometimes             | Usually better      |    |     |
+
+# Use [[ ]] in Bash scripts for safer and more powerful tests, but 
+# use [ ] if you want maximum portability across shells.
 
 echo -n "What car do you drive? "
 read car
